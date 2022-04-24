@@ -19,6 +19,7 @@ const port = process.env.port || 30001;
 app.use(require("./API/User"));
 app.use(require("./API/Chat"));
 app.use(require("./API/Message"));
+app.use(require("./API/Startup"));
 const connection = app.listen(port, () => {
   console.log("sever running");
 });
